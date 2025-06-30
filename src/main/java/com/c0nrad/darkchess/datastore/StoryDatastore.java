@@ -12,7 +12,7 @@ import org.bson.types.ObjectId;
 import xyz.morphia.Datastore;
 
 public class StoryDatastore {
-    private static final String P = "PPPPPPPP";
+    private static final String KEY_P = "PPPPPPPP";
     public static Story Find(String storyId) {
         Datastore d = MorphiaSingleton.GetDatastore();
         ObjectId objectId = new ObjectId(storyId);
@@ -43,7 +43,7 @@ public class StoryDatastore {
 
         String[] layout ={
             "    K   ", 
-            "P",
+            KEY_P,
             "        ",
             "        ",
             "        ",
@@ -92,7 +92,7 @@ public class StoryDatastore {
 
         String[] layout3 ={
             "RNBQKBNR", 
-            "P",
+            KEY_P,
             "        ",
             "        ",
             "        ",
@@ -116,8 +116,8 @@ public class StoryDatastore {
 
         String[] layout4 ={
             "PPPPKPPP", 
-            "P",
-            "P",
+            KEY_P,
+            KEY_P,
             "        ",
             "        ",
             "        ",
@@ -138,7 +138,7 @@ public class StoryDatastore {
 
         String[] layout5 ={
             "RNBQKBNR", 
-            "P",
+            KEY_P,
             "        ",
             "        ",
             "        ",
